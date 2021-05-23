@@ -1,5 +1,14 @@
 def fibonacci(num)
-  # type your code in here
+  # arr = [0, 1]
+  # for i in 2..num
+  #   arr[i] = arr[i-2] + arr[i-1]
+  # end
+  # arr[num]
+
+  if num <= 1
+    return num
+  end
+  return fibonacci(num - 1) + fibonacci(num - 2)
 end
 
 if __FILE__ == $PROGRAM_NAME
